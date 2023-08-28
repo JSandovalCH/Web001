@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_sec-info {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+    height: 50%;
+    max-width: 120vh;
+    display: flex;
+    flex-flow: wrap-reverse;
+}
+
+.container_sec-info p {
+    text-align: left;
+}
+
+.container_padre {
+    background-color: #ffffff;
+}
+
+.paragraph {
+    max-width: 600px;
+    font-size: 10px;
+    padding-top: 60px;
+    font-family: 'sans-serif';
+}
+
+.paragraph_01 {
+    font-family: 'sans-serif';
+    font-size: 30px;
+    padding-bottom: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.paragraph_02 {
+    padding-bottom: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.container_sec-info div img {
+    margin: auto;
+    width: 400px;
+    height: 600px;
+    display: inline-block;
+    max-width: 100%;
+    border-radius: 5%;
+}
+
+.container_sec-info-img {
+    position: relative;
+}
+
+.sec_info-img1 {
+    position: absolute;
+    z-index: 1;
+    left: 120px;
+    top: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.sec_info-img2 {
+    position: relative;
+    bottom: 30px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.redirect-button-1 {
+    display: inline-block;
+    background-color: rgb(255, 234, 202);
+    border: none;
+    color: #000;
+    padding: 10px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 0px;
+}
+
+.redirect-button-1:hover {
+    background-color: rgb(220, 200, 170);
+}
+
+@media (max-width: 810px) {
+    .container_sec-info p {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .paragraph_01 {
+        font-size: 5rem;
+    }
+
+    .paragraph_02 {
+        font-size: 1rem;
+    }
+
+    .container_sec-info {
+        padding-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .sec_info-img2 {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+
+    .sec_info-img1 {
+        position: relative;
+        display: none;
+        left: 0px;
+        top: 0px;
+    }
+}

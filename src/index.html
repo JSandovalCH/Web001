@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com  -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Image Slider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Asar&family=Lily+Script+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../src/static/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../src/static/css/style_slider.css" />
+  <link rel="stylesheet" href="../src/static/css/style_navbar.css">
+  <link rel="stylesheet" href="../src/static/css/style_sec-info.css">
+  <link rel="stylesheet" href="../src/static/css/style_footer.css">
+  <link rel="stylesheet" href="../src/static/css/style_galery.css">
+  <link rel="stylesheet" href="../src/static/css/style_banners.css">
+</head>
+
+<body>
+
+  <!--STYLE_NAVBAR-->
+
+  <div>
+    <nav class="menu">
+      <section class="menu__container">
+        <h1 class="menu__logo">FruttiLover's</h1>
+        <ul class="menu__links">
+          <li class="menu__item">
+            <a href="../src/index.html" class="menu__link">HOME</a>
+          </li>
+          <li class="menu__item menu__item--show">
+            <a href="#" class="menu__link">NOSOTROS<img src="../assets/arrow.svg" class="menu__arrow"></a>
+
+            <ul class="menu__nesting">
+              <li class="menu__inside">
+                <a href="#" class="menu__link menu__link--inside">GALERIA</a>
+              </li>
+              <li class="menu__inside">
+                <a href="#" class="menu__link menu__link--inside">NUESTRA HISTORIA</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu__item  menu__item--show">
+            <a href="#" class="menu__link">MENÚ<img src="../assets/arrow.svg" class="menu__arrow"></a>
+
+            <ul class="menu__nesting">
+              <li class="menu__inside">
+                <a href="#" class="menu__link menu__link--inside">BEBIDAS</a>
+              </li>
+              <li class="menu__inside">
+                <a href="#" class="menu__link menu__link--inside">ALIMENTOS</a>
+              </li>
+              <li class="menu__inside">
+                <a href="#" class="menu__link menu__link--inside">PACKS Y BOXES</a>
+              </li>
+              <li class="menu__inside">
+                <a href="#" class="menu__link menu__link--inside">MERCH Y CAFÉ EN GRANO</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu__item">
+            <a href="#contact" class="menu__link">CONTACTENOS</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">LOGIN</a>
+          </li>
+        </ul>
+
+        <div class="menu__hamburguer">
+          <img src="../assets/menu.svg" class="menu__img">
+        </div>
+      </section>
+    </nav>
+  </div>
+
+  <!--STYLE_SLIDER.CSS / SWIPER-BUNDLE.MIN.CSS-->
+
+  <section class="main swiper mySwiper">
+    <div class="wrapper swiper-wrapper">
+      <div class="slide swiper-slide">
+        <img src="../src/static/img/img1.jpg" alt="" class="image" />
+        <div class="image-data">
+          <span class="text">Sabor en cada sorbo</span>
+          <h2 style="font-size: 35px;">
+            Cada vaso de frescura y vitalidad, exprimido para ti
+          </h2>
+          <a href="#" class="button">About Us</a>
+        </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img src="../src/static/img/img2.jpg" alt="" class="image" />
+        <div class="image-data">
+          <span class="text">Bocados llenos de delicia</span>
+          <h2 style="font-size: 35px;">
+            Deliciosos sabores entre panes, listos para disfrutar
+          </h2>
+          <a href="#" class="button">About Us</a>
+        </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img src="../src/static/img/img3.jpg" alt="" class="image" />
+        <div class="image-data">
+          <span class="text">Aromas que despiertan momentos</span>
+          <h2 style="font-size: 35px;">
+            Aromas y charlas que se entrelazan en nuestra acogedora cafetería
+          </h2>
+          <a href="#" class="button">About Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <!--SECCION_INFORMATIVA-->
+
+  <section class="container_padre" id="about">
+    <center>
+      <h2 style="color: #070707; font-family: 'Asar', serif; font-size: 1em; margin-top: 30px;">+51 91 438 9400 | URB.
+        LAURA CALLER</h2>
+    </center>
+    <center>
+      <section class="container_sec-info">
+        <div class="container_sec-info-img">
+          <img class="sec_info-img1" src="../src/static/img/img5.jpg" alt="">
+          <img class="sec_info-img2" src="../src/static/img/img6.jpg" alt="">
+        </div>
+        <div>
+          <p class="paragraph_01"
+            style="color: rgba(163, 234, 138, 1); font-family: 'Lily Script One', cursive; font-size: 6rem;">
+            ¿Quiénes Somos?
+          </p>
+          <p class="paragraph_02" style="color: #050505; font-size: 1.5em; font-family: 'Asar', serif;">
+            Somos una cafetería-sandwichería-juguería única que combina lo mejor de estos tres mundos. Ofrecemos
+            deliciosos cafés, creativos sándwiches y jugos frescos y saludables. Nuestro objetivo es brindar una
+            experiencia acogedora y llena de sabores en un ambiente vibrante. ¡Te invitamos a disfrutar de nuestra
+            oferta única en cada visita!
+          </p>
+          <a class="redirect-button-1" href="#">Ver más</a>
+        </div>
+      </section>
+    </center>
+  </section>
+
+  <!-- GALERÍA -->
+
+  <section class="container_sec-galery">
+    <div class="content">
+      <div>
+        <p class="paragraph_01_sec-galery">Galería</p>
+        <p class="paragraph_02_sec-galery">
+          Explora un mundo de sabores en nuestra cafetería-sandwichería-juguería. Descubre la fusión perfecta entre
+          exquisitos cafés de especialidad, sándwiches creativos y jugos frescos que deleitarán tus sentidos. En
+          Frutilover's, te invitamos a disfrutar lo mejor de nuestra oferta gastronómica mientras exploras las delicias
+          de
+          nuestra cocina y disfrutas de momentos únicos.
+        </p>
+      </div>
+      <div class="image-row">
+        <div class="image-item">
+          <img src="../src/static/img/img1.jpg" alt="Imagen 1">
+          <p class="image-caption">JUGO DE NARANJA</p>
+        </div>
+        <div class="image-item">
+          <img src="../src/static/img/img7.jpg" alt="Imagen 2">
+          <p class="image-caption">HAMBURGUESA ROYAL</p>
+        </div>
+        <div class="image-item">
+          <img src="../src/static/img/img3.jpg" alt="Imagen 3">
+          <p class="image-caption">CAFÉ EXPRESO</p>
+        </div>
+        <div class="image-item">
+          <img src="../src/static/img/img8.jpg" alt="Imagen 4">
+          <p class="image-caption">CAPPUCINO</p>
+        </div>
+      </div>
+      <a class="redirect-button-2" href="#">Ver más</a>
+    </div>
+  </section>
+
+  <!-- BANNERS -->
+
+  <section class="triple-image-section">
+    <div class="image-row-2">
+      <div class="image-item-2">
+        <img src="../src/static/img/img9.jpg" alt="Imagen 1">
+        <div class="image-caption-2">
+          <p style="font-family: 'Asar', serif;">UN CLÁSICO DELICIOSO</p>
+          <p style="font-family: 'Lily Script One', cursive; color: #d7a981; font-size: 3rem;">TORTA DE CAFÉ MOCHA</p>
+          <a class="redirect-button-2" href="#">Ver más</a>
+        </div>
+      </div>
+      <div class="image-item-2">
+        <img src="../src/static/img/img11.jpg" alt="Imagen 2">
+        <div class="image-caption-2">
+          <p style="font-family: 'Asar', serif;">DELICIAS ÚNICAS</p>
+          <p style="font-family: 'Lily Script One', cursive; color: #e3b58c; font-size: 3rem;">CHEESECAKE DE FRESA</p>
+          <a class="redirect-button-2" href="#">Ver más</a>
+        </div>
+      </div>
+    </div>
+    <div class="image-item-2">
+      <img src="../src/static/img/img10.jpg" alt="Imagen 3">
+      <div class="image-caption-2">
+        <p style="font-family: 'Asar', serif;">DULCE PERFECCIÓN</p>
+        <p style="font-family: 'Lily Script One', cursive; color: #e3b58c; font-size: 3rem;">CHEESECAKE DE OREO</p>
+        <p style="font-family: 'Asar', serif; font-size: 1.5rem; max-width: 50%;">Déjate llevar por la indulgencia de
+          nuestro cheesecake de Oreo. Cada porción es un equilibrio exquisito entre el suave queso crema y la crujiente
+          galleta Oreo, creando una experiencia de sabor única y adictiva. Cada mordisco es una muestra de nuestra
+          dedicación a ofrecer postres excepcionales y tentadores.</p>
+        <a class="redirect-button-2" href="#">Ver más</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="../src/static/JS/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script src="../src/static/JS/app.js"></script>
+
+  <!--STYLE_FOOTER-->
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4 style="color: #e3b58c">CONTACTO Y ATENCIÓN AL CLIENTE WHATSAPP</h4>
+          <ul>
+            <li><a style="color: #775c44" href="https://www.whatsapp.com/?lang=es">(01)505-0505</a></li>
+            <li><a style="color: #775c44" href="https://www.whatsapp.com/?lang=es">TELÉFONO LIMA: (01)505-0050</a></li>
+            <li><a style="color: #775c44" href="https://www.whatsapp.com/?lang=es">TELÉFONO PROVINCIA: (044)779-009</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 style="color: #e3b58c">SOBRE NOSOTROS</h4>
+          <ul>
+            <li><a style="color: #775c44" href="#">NUESTRA MISIÓN</a></li>
+            <li><a style="color: #775c44" href="#">TIENDAS, HORARIOS Y ZONA DE COBERTURA</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 style="color: #e3b58c">POLÍTICAS Y TÉRMINOS DE PRIVACIDAD</h4>
+          <ul>
+            <li><a style="color: #775c44" href="#">POLÍTICAS DE DELIVERY, PICK UP Y AUTOSTARBUCKS</a></li>
+            <li><a style="color: #775c44" href="#">TÉRMINOS Y CONDICIONES DE LA WEB</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 style="color: #e3b58c">FOLLOW US</h4>
+          <div class="social-links">
+            <a style="color: #775c44" href="https://es-la.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a style="color: #775c44" href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
+            <a style="color: #775c44" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a style="color: #775c44" href="https://pe.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
